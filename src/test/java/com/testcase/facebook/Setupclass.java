@@ -19,7 +19,7 @@ public class Setupclass {
         driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
     }
     
     // FIX 1: Added String standard parameters to accept DataProvider items

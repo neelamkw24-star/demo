@@ -5,7 +5,7 @@
     <classes>
       <class name="com.testcase.facebook.Setupclass">
         <methods>
-          <include name="testing"/>
+          <include name="testing" invocation-numbers="0 1"/>
           <include name="setupbrowser"/>
           <include name="teardwon"/>
         </methods>
