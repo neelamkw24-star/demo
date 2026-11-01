@@ -23,7 +23,7 @@ public class Setupclass {
     }
     
     // FIX 1: Added String standard parameters to accept DataProvider items
-    @Test(dataProvider = "inputgoogleSearchtext")
+    @Test( priority = 0, dataProvider = "inputgoogleSearchtext")
     public void testing(String searchText) {
         assertEquals(driver.getTitle(), "Google");
         
@@ -40,6 +40,10 @@ public class Setupclass {
             { "testing" },
             { "githubh" }
         };
+    }
+    @Test(priority = 1)
+    public void seracch() {
+    	driver.findElement(By.cssSelector("#input")).sendKeys("testing");
     }
 
     @AfterMethod
